@@ -15,3 +15,8 @@ def add(request):
     c = int(a) + int(b)
 
     return HttpResponse(str(c))
+
+
+def add2(request, a, b):
+    c = int(a) + int(b)
+    return HttpResponse(str(c))
