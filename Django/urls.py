@@ -22,6 +22,7 @@ from Demo import views as demo_views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', demo_views.index),
+    # url(r'^$', demo_views.index2),
     url('^add/$', demo_views.add, name='add'),
     url(r'^add/(\d+)/(\d+)/$', demo_views.add2, name='add2'),
 ]
