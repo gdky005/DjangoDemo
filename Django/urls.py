@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from Demo import views as demo_views
 
 
 # 网址入口，关联到对应的views.py中的一个函数
 
 urlpatterns = [
+    url(r'^$', demo_views.index),
     url(r'^admin/', admin.site.urls),
 ]
