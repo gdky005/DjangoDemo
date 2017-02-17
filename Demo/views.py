@@ -26,10 +26,14 @@ def add2(request, a, b):
 
 
 def index(request):
-    return render(request, 'home.html')
+    return render(request, 'Demo/home.html')
 
 
 def old_add2_redirect(request, a, b):
     return HttpResponseRedirect(
         reverse('add2', args=(a, b))
     )
+
+
+def home(request):
+    return render(request, "Demo/home.html")

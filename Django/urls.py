@@ -27,4 +27,7 @@ urlpatterns = [
     url('^add/$', demo_views.add, name='add'),
     url(r'^add/(\d+)/(\d+)/$', demo_views.add2, name='add2'),
     url(r'^new_add/(\d+)/(\d+)/$', demo_views.add2, name='add2'),
+    url(r'^$', demo_views.home, name='home'),
+
+
 ]
