@@ -5,9 +5,86 @@
 {% block content %}
     {% include 'ad.html' %}
 
-    <br/><br/><br/>
+    <br xmlns="http://www.w3.org/1999/html"/><br/><br/>
 
-    这里是首页，欢迎光临. 内置的内容是：<br/><h1>{{ string }}</h1>
+    这里是首页，欢迎光临. 内置的内容是：<br/>
+
+
+
+    <h1>
+
+
+        {#    {% for i in TutorialList %}#}
+        {#        {{ i }}#}
+        {#    {% endfor %}#}
+
+        {#    站点：{{ info_dict.site }}, 内容：{{ info_dict.content }}#}
+
+        {#    {% for key, value in info_dict.items %}#}
+        {#        {{ key }} : {{ value }}#}
+        {#    {% endfor %}#}
+
+        {#    {% for item in List %}#}
+        {#        {{ item }} {% if not forloop.last %}#}
+        {#        ,#}
+        {#        {% endif %}#}
+        {#    {% endfor %}#}
+
+        {#        <ul>#}
+        {#            {% for foo in List %}#}
+        {#                <li>{{ foo }}</li>#}
+        {#            {% empty %}#}
+        {#                <li>抱歉，列表为空</li>#}
+        {#            {% endfor %}#}
+        {##}
+        {#        </ul>#}
+
+        {#        {% url 'add' 4 5 %}#}
+
+
+        {#        这个需要再测测#}
+        {#        {% url 'some-url-name' arg arg2 as the_url %}#}
+        {#        <a href="{{ the_url }}"> 链接到： {{ the_url }} </a>#}
+
+
+{#        {% if var >= 90 %}#}
+{#            成绩优秀，自强学堂你没少去吧！学得不错#}
+{#        {% elif var >= 80 %}#}
+{#            成绩良好#}
+{#        {% elif var >= 70 %}#}
+{#            成绩一般#}
+{#        {% elif var >= 60 %}#}
+{#        {% elif var >= 60 %}#}
+{#            需要努力#}
+{#        {% else %}#}
+{#            不及格啊，大哥！多去自强学堂学习啊！#}
+{#        {% endif %}#}
+
+{#        {% if var <= 100 and var >= 0 %}#}
+{#            numb 在 0 到 100 之间#}
+{#            {% else %}#}
+{#            数值不在范围内#}
+{##}
+{#        {% endif %}#}
+
+{#            {{ request.user }}#}
+
+
+{#        {% if request.user.is_authenticated %}#}
+{#            {{ request.user.username }}, 您好！#}
+{#            {% else %}#}
+{#            请登陆，这里放登陆链接#}
+{#            #}
+{#        {% endif %}#}
+
+
+{#        {{ request.path }}#}
+
+{#            {{ request.GET.urlencode }}#}
+
+            <a href="{{ request.path }}?{{ request.GET.urlencode }}&delete=1">当前网址加参数</a>
+
+    </h1>
     <br/><br/><br/>
 
 

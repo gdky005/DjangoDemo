@@ -30,5 +30,6 @@ urlpatterns = [
     url(r'^new_add/(\d+)/(\d+)/$', demo_views.add2, name='add2'),
     # url(r'^$', demo_views.home, name='home'),
     url(r'^$', template_views.home, name='home'),
+    url(r'^add/(\d+)/(\d+)/$', template_views.add, name='add'),
 
 ]
