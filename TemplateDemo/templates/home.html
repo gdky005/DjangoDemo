@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}欢迎光临首页{% endblock %}
+
+{% block content %}
+    {% include 'ad.html' %}
+
+    <br/><br/><br/>
+
+    这里是首页，欢迎光临. 内置的内容是：<br/><h1>{{ string }}</h1>
+    <br/><br/><br/>
+
+
+{% endblock %}
